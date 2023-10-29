@@ -1,11 +1,81 @@
 .main {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  align-items: center;
+  /* padding: 6rem; */
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: black;
+}
+
+.img {
+  width: max-content;
+}
+
+.banner {
+  /* width: 100%; */
+  text-align: center;
+  background-color: var(--brand-color);
+  margin-top: 0;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  grid-auto-rows: auto-fit;
+  padding: 20px;
+}
+
+/* Media query to limit the columns to 3 for wider screens */
+@media screen and (min-width: 768px) {
+  .gridLayout {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gridElem {
+  border-color: grey;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  background-color: var(--brand-color);
+  padding: 8px;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .gridElem:hover {
+    /* background-color: rgba(var(--brand-color), 1); */
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    cursor: pointer;
+    /* border: 1px solid rgba(var(--card-border-rgb), 0.15); */
+  }
+}
+
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-}
+} */
 
 .description {
   display: inherit;
@@ -107,6 +177,7 @@
 .logo {
   position: relative;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -178,11 +249,9 @@
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
+    background: linear-gradient(to bottom,
+        rgba(var(--background-start-rgb), 1),
+        rgba(var(--callout-rgb), 0.5));
     background-clip: padding-box;
     backdrop-filter: blur(24px);
   }
@@ -193,11 +262,9 @@
     inset: auto 0 0;
     padding: 2rem;
     height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
+    background: linear-gradient(to bottom,
+        transparent 0%,
+        rgb(var(--background-end-rgb)) 40%);
     z-index: 1;
   }
 }
@@ -223,6 +290,7 @@
   from {
     transform: rotate(360deg);
   }
+
   to {
     transform: rotate(0deg);
   }

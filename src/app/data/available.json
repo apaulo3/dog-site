@@ -1,0 +1,49 @@
+{
+  "available_dogs": [
+    {
+      "name": "Bailey",
+      "gender": false,
+      "age": 8
+    },
+    {
+      "name": "Buddy",
+      "gender": true,
+      "age": 13
+    },
+    {
+      "name": "Duke",
+      "gender": true,
+      "age": 7
+    },
+    {
+      "name": "Nala",
+      "gender": false,
+      "age": 9
+    },
+    {
+      "name": "Cordelia",
+      "gender": false,
+      "age": 8
+    },
+    {
+      "name": "Brandy",
+      "gender": true,
+      "age": 10
+    },
+    {
+      "name": "Lucky",
+      "gender": false,
+      "age": 12
+    },
+    {
+      "name": "Rocky",
+      "gender": true,
+      "age": 8
+    },
+    {
+      "name": "Bilbow",
+      "gender": true,
+      "age": 10
+    }
+  ]
+}
