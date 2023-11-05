@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 import PuppyGrid from './components/grid'
 import WelcomeBanner from './components/welcomeBanner'
 import OverlayBanner from './components/overlayBanner'

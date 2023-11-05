@@ -90,17 +90,39 @@
 }
 
 /* The Close Button */
-.close {
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
   margin: 0;
   padding: 0;
   border: 0;
-  color: black;
   background: none;
-  display: block;
   position: relative;
+  width: $size;
+  height: $size;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: ($size - $thickness) / 2;
+    left: 0;
+    right: 0;
+    height: $thickness;
+    background: $color;
+    border-radius: $thickness;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.close {
+  @include cross(30px, #000, 3px);
   float: right;
-  width: 40px;
-  height: 40px;
 }
 
 .close:hover,

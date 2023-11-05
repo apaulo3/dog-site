@@ -1,4 +1,4 @@
-import styles from '../page.module.css';
+import styles from '../page.module.scss';
 import Image from 'next/image';
 import { getGender } from '../utils';
 
@@ -9,7 +9,7 @@ export default function Modal({ dogInfo, onClose }) {
   return (
     <div className={styles.modal}>
       <div className={styles.modalContent}>
-        <button className={styles.close} onClick={onClose}>X</button>
+        <button className={styles.close} onClick={onClose} />
         <div >
           <h1>{name} ({getGender(gender)})</h1>
           <p>{age} weeks</p>
