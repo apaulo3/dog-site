@@ -1,40 +1,56 @@
-import { promises as fs } from 'fs';
-import styles from '../page.module.css'
-import Image from 'next/image'
+'use client';
 
-export default async function PuppyGrid() {
-  const file = await fs.readFile(process.cwd() + '/src/app/data/available.json', 'utf8');
-  const data = JSON.parse(file).available_dogs;
+import styles from '../page.module.css';
+import Image from 'next/image';
+import { useState, useEffect } from 'react'
+import Modal from './modal';
+import { getGender } from '../utils';
 
-  var dogList = []
+export default function PuppyGrid() {
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState({})
+  const [data, setData] = useState(null)
+  const [isLoading, setLoading] = useState(true)
 
-  data.forEach(
-    (dog) => {
-      dogList.push(<div className={styles.gridElem}>
-        <h1>{dog.name} ({getGender(dog.gender)})</h1>
-        <p>{dog.age} weeks</p>
-        <Image
-          src="/doodlePup.jpg"
-          alt="Doodle Pup"
-          layout="responsive"
-          width={100}
-          height={66.8}
-        />
-      </div>)
-    }
-  )
+  const openModal = (dog) => {
+    setModalContent(dog);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
+  useEffect(() => {
+    fetch('/data/available.json')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data)
+        setLoading(false)
+      })
+  }, [])
+
+  if (isLoading) return <p>Loading...</p>
+  if (!data) return <p>No data</p>
 
   return (
     <div className={styles.gridLayout}>
-      {dogList}
-    </div>
-  );
-}
+      {data.available_dogs.map((dog, index) => (
+        <div key={index} className={styles.gridElem} onClick={() => openModal(dog)}>
+          <h1>{dog.name} ({getGender(dog.gender)})</h1>
+          <p>{dog.age} weeks</p>
+          <Image
+            src="/doodlePup.jpg"
+            alt="Doodle Pup"
+            layout="responsive"
+            width={100}
+            height={66.8}
+          />
+        </div>
+      ))
+      }
 
-function getGender(genderBool) {
-  if (genderBool) {
-    return "m"
-  } else {
-    return "f"
-  }
+      {showModal && <Modal dogInfo={modalContent} onClose={closeModal} />}
+    </div >
+  );
 }
