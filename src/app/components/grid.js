@@ -43,12 +43,12 @@ export default function PuppyGrid() {
             src="/doodlePup.jpg"
             alt="Doodle Pup"
             layout="responsive"
+            className={styles.img}
             width={100}
             height={66.8}
           />
         </div>
-      ))
-      }
+      ))}
 
       {showModal && <Modal dogInfo={modalContent} onClose={closeModal} />}
     </div >
