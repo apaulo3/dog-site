@@ -1,4 +1,4 @@
-import styles from '../page.module.scss'
+import styles from '../styles/page.module.scss'
 import Image from 'next/image'
 
 export default function OverlayBanner() {

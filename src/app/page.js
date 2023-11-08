@@ -1,12 +1,14 @@
-import styles from './page.module.scss'
+import styles from './styles/page.module.scss'
 import PuppyGrid from './components/grid'
 import WelcomeBanner from './components/welcomeBanner'
 import OverlayBanner from './components/overlayBanner'
+import Header from './components/header'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <WelcomeBanner />
+      <Header />
 
       <h2>About Us</h2>
       <p>

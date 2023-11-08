@@ -1,4 +1,4 @@
-import styles from '../page.module.scss';
+import styles from '../styles/page.module.scss';
 import Image from 'next/image';
 import { getGender } from '../utils';
 
@@ -17,6 +17,7 @@ export default function Modal({ dogInfo, onClose }) {
             src="/cooper1.png"
             alt="Doodle Pup"
             layout="responsive"
+            className={styles.img}
             width={100}
             height={66.8}
           />

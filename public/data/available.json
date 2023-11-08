@@ -1,49 +1,49 @@
 {
   "available_dogs": [
     {
-      "name": "Bailey",
+      "name": "Cooper",
+      "gender": true,
+      "age": 5
+    },
+    {
+      "name": "Zephyr",
+      "gender": true,
+      "age": 5
+    },
+    {
+      "name": "Pippin",
       "gender": false,
-      "age": 8
+      "age": 5
     },
     {
-      "name": "Buddy",
+      "name": "Poppy",
       "gender": true,
-      "age": 13
+      "age": 5
     },
     {
-      "name": "Duke",
-      "gender": true,
-      "age": 7
-    },
-    {
-      "name": "Nala",
+      "name": "Blu",
       "gender": false,
-      "age": 9
+      "age": 5
     },
     {
-      "name": "Cordelia",
-      "gender": false,
-      "age": 8
-    },
-    {
-      "name": "Brandy",
+      "name": "Pheonix",
       "gender": true,
-      "age": 10
+      "age": 5
     },
     {
-      "name": "Lucky",
-      "gender": false,
-      "age": 12
-    },
-    {
-      "name": "Rocky",
+      "name": "Coda",
       "gender": true,
-      "age": 8
+      "age": 5
     },
     {
-      "name": "Bilbow",
+      "name": "Tanner",
       "gender": true,
-      "age": 10
+      "age": 5
+    },
+    {
+      "name": "Murphy",
+      "gender": true,
+      "age": 5
     }
   ]
 }
