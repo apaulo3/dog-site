@@ -1,7 +1,7 @@
 .main {
   align-items: center;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #faecd6;
   color: black;
 }
 
@@ -47,6 +47,10 @@
 .gridElem {
   // border-radius: 15px;
   padding: 8px;
+}
+
+.gridElem h1 {
+  white-space: nowrap;
 }
 
 /* Enable hover only on non-touch devices */
@@ -131,4 +135,24 @@
 .close:focus {
   text-decoration: none;
   cursor: pointer;
+}
+
+.aboutSection {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  padding-inline: 5%;
+  padding-block: 5%;
+}
+
+.aboutHeading {
+  margin-left: 5%;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.aboutText {
+  text-align: justify;
 }
