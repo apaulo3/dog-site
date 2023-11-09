@@ -1,6 +1,6 @@
 /* The Modal (background) */
 .modal {
-  display: block;
+  display: flex;
   position: fixed;
   /* Stay in place */
   z-index: 1;
@@ -11,22 +11,17 @@
   /* Full width */
   height: 100%;
   /* Full height */
-  // overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.7);
   /* Black w/ opacity */
-  align-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 /* Modal Content/Box */
 .modalContent {
   background-color: #fefefe;
-  margin: auto;
-  margin-top: 10%;
   padding: 1%;
-  border: 1px solid #888;
-  width: 50%;
+  width: 80%;
   border-radius: 15px;
 }
 
