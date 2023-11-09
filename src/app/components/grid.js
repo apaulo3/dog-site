@@ -1,6 +1,7 @@
 'use client';
 
-import styles from '../styles/page.module.scss';
+import styles from '../styles/grid.module.scss';
+import commonStyles from '../styles/common.module.scss'
 import Image from 'next/image';
 import { useState, useEffect } from 'react'
 import Modal from './modal';
@@ -43,7 +44,7 @@ export default function PuppyGrid() {
             src="/doodlePup.jpg"
             alt="Doodle Pup"
             layout="responsive"
-            className={styles.img}
+            className={commonStyles.img}
             width={100}
             height={66.8}
           />
