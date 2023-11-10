@@ -7,9 +7,21 @@
 }
 
 /* Media query to limit the columns to 3 for wider screens */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
   .gridLayout {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 819px) {
+  .gridLayout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .gridLayout {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
