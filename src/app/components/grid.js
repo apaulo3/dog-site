@@ -23,7 +23,7 @@ export default function PuppyGrid() {
   };
 
   useEffect(() => {
-    fetch('/data/available.json')
+    fetch('/data/pups.json')
       .then((res) => res.json())
       .then((data) => {
         setData(data)
@@ -36,7 +36,7 @@ export default function PuppyGrid() {
 
   return (
     <div className={styles.gridLayout}>
-      {data.available_dogs.map((dog, index) => (
+      {data.pups.map((dog, index) => (
         <div key={index} className={styles.card} onClick={() => openModal(dog)}>
           <div className={styles.cardHeading}>
             <div>
