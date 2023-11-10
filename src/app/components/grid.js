@@ -37,9 +37,14 @@ export default function PuppyGrid() {
   return (
     <div className={styles.gridLayout}>
       {data.available_dogs.map((dog, index) => (
-        <div key={index} className={styles.gridElem} onClick={() => openModal(dog)}>
-          <h1>{dog.name} ({getGender(dog.gender)})</h1>
-          <p>{dog.age} weeks</p>
+        <div key={index} className={styles.card} onClick={() => openModal(dog)}>
+          <div className={styles.cardHeading}>
+            <div>
+              <h1>{dog.name} ({getGender(dog.gender)})</h1>
+              <p>{dog.age} weeks</p>
+            </div>
+            <p className={styles.pill}>Available</p>
+          </div>
           <Image
             src="/doodlePup.jpg"
             alt="Doodle Pup"
