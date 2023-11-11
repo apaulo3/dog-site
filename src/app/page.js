@@ -4,6 +4,7 @@ import WelcomeBanner from './components/welcomeBanner'
 import OverlayBanner from './components/overlayBanner'
 import Header from './components/header'
 import Image from 'next/image'
+import CaptionedImage from './components/captionedImage'
 
 export default function Home() {
   return (
@@ -17,7 +18,23 @@ export default function Home() {
         </p>
       </div>
 
-      {/* <OverlayBanner /> */}
+      <CaptionedImage
+        text={"Our Dam"}
+        subText={"Nala, F1 Golden Doodle"}
+        imgSrc={"/doodlePup.jpg"}
+      />
+
+      <div name="spacer" style={{ height: 70 }} />
+
+      <CaptionedImage
+        text={"Our Sire"}
+        subText={"Bilbo, F1 Golden Doodle"}
+        imgSrc={"/doodlePup.jpg"}
+        imageLeft={true}
+      />
+
+      <div name="spacer" style={{ height: 70 }} />
+
       <PuppyGrid />
     </main>
   )
