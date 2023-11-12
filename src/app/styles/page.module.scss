@@ -19,16 +19,31 @@
   flex-direction: column;
   justify-content: center;
   height: fit-content;
-  padding-inline: 5%;
-  padding-block: 5%;
+  padding-inline: 15%;
+  padding-top: 7%;
+  padding-bottom: 10%;
+  // max-width: 50%;
 }
 
 .aboutHeading {
-  margin-left: 5%;
-  margin-bottom: 20px;
-  font-size: 25px;
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: 3em;
 }
 
 .aboutText {
+  font-size: 1.2em;
   text-align: justify;
+}
+
+.sectionTitle {
+  font-size: 3em;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.sectionSubtitle {
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 100px;
 }
