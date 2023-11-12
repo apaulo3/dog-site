@@ -1,5 +1,11 @@
 import styles from '../styles/header.module.scss';
 import Image from 'next/image';
+import { Allison } from 'next/font/google';
+
+const allisonFont = Allison({
+  subsets: ['latin'],
+  weight: '400'
+})
 
 export default function Header() {
   return (
@@ -15,7 +21,7 @@ export default function Header() {
 
       <div className={styles.header}>
 
-        <h1 className={styles.title}>PawPaws</h1>
+        <h1 className={`${styles.title} ${allisonFont.className}`}>PawPaws</h1>
 
         <Image
           src="/doodleInLeaves.png"
