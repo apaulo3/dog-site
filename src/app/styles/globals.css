@@ -1,5 +1,7 @@
 :root {
   --brand-color: rgb(9, 108, 206);
+  --green-pill-border: rgb(71, 213, 24);
+  --green-pill-fill: rgb(203, 250, 188);
 }
 
 * {
