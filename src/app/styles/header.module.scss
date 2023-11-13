@@ -2,6 +2,11 @@
   display: flex;
   position: relative;
   justify-content: center;
+  height: 101vh;
+}
+
+.img {
+  object-fit: cover;
 }
 
 .imgOverlay {
@@ -10,24 +15,46 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 99%, rgba(255, 255, 255, 1) 100%);
   z-index: 0.9;
-  /* Ensure it's above the image */
 }
 
-.logo {
-  position: absolute;
-  float: left;
-  width: 6vw;
-  height: 6vw;
-  margin: 2%;
-  z-index: 1;
-}
-
-.title {
+.textContainer {
   color: white;
   z-index: 1;
   position: absolute;
-  margin-top: 0%;
-  font-size: 6vw;
+  margin-top: 6%;
+  text-align: center;
+}
+
+.title {
+  font-size: 8em;
+  margin-bottom: -33px;
+}
+
+.subTitle {
+  font-size: 1.6em;
+}
+
+.actionBtn {
+  position: absolute;
+  align-self: center;
+  margin-top: 400px;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  padding-inline: 40px;
+  padding-block: 15px;
+
+  font-size: 1.5em;
+
+}
+
+.actionBtn:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
 }
