@@ -5,6 +5,7 @@ import OverlayBanner from './components/overlayBanner'
 import Header from './components/header'
 import Image from 'next/image'
 import CaptionedImage from './components/captionedImage'
+import { prefix } from './components/prefix'
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       <CaptionedImage
         text={"Our Dam"}
         subText={"Nala, F1 Golden Doodle"}
-        imgSrc={"/doodlePup.jpg"}
+        imgSrc={`doodlePup.jpg`}
       />
 
       <div name="spacer" style={{ height: 70 }} />
@@ -29,7 +30,7 @@ export default function Home() {
       <CaptionedImage
         text={"Our Sire"}
         subText={"Bilbo, F1 Golden Doodle"}
-        imgSrc={"/doodlePup.jpg"}
+        imgSrc={`doodlePup.jpg`}
         imageLeft={true}
       />
 

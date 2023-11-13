@@ -23,7 +23,7 @@ export default function PuppyGrid() {
   };
 
   useEffect(() => {
-    fetch('/data/pups.json')
+    fetch(`data/pups.json`)
       .then((res) => res.json())
       .then((data) => {
         setData(data)
@@ -46,7 +46,7 @@ export default function PuppyGrid() {
             <p className={styles.pill}>Available</p>
           </div>
           <Image
-            src="/doodlePup.jpg"
+            src={`doodlePup.jpg`}
             alt="Doodle Pup"
             layout="responsive"
             className={commonStyles.img}

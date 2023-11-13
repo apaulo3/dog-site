@@ -2,6 +2,7 @@ import styles from '../styles/modal.module.scss';
 import commonStyles from '../styles/common.module.scss'
 import Image from 'next/image';
 import { getGender } from '../utils';
+import { prefix } from './prefix';
 
 export default function Modal({ dogInfo, onClose }) {
 
@@ -15,7 +16,7 @@ export default function Modal({ dogInfo, onClose }) {
           <h1>{name} ({getGender(gender)})</h1>
           <p>{age} weeks</p>
           <Image
-            src="/cooper1.png"
+            src={`doodlePup.jpg`}
             alt="Doodle Pup"
             layout="responsive"
             className={commonStyles.img}

@@ -21,7 +21,7 @@ export default function OverlayBanner() {
       ></div>
       <div className='row'>
         <Image
-          src="/golden.png"
+          src={`golden.png`}
           alt="Golden"
           layout="fit"
           width={430}
