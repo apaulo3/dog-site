@@ -1,11 +1,7 @@
 import styles from './styles/page.module.scss'
 import PuppyGrid from './components/grid'
-import WelcomeBanner from './components/welcomeBanner'
-import OverlayBanner from './components/overlayBanner'
 import Header from './components/header'
-import Image from 'next/image'
 import CaptionedImage from './components/captionedImage'
-import { prefix } from './components/prefix'
 
 export default function Home() {
   return (

@@ -1,7 +1,6 @@
 import styles from '../styles/header.module.scss';
 import Image from 'next/image';
 import { Allison, Wix_Madefor_Text } from 'next/font/google';
-import { prefix } from './prefix';
 
 const allisonFont = Allison({
   subsets: ['latin'],

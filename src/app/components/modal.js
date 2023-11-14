@@ -2,7 +2,6 @@ import styles from '../styles/modal.module.scss';
 import commonStyles from '../styles/common.module.scss'
 import Image from 'next/image';
 import { getGender } from '../utils';
-import { prefix } from './prefix';
 
 export default function Modal({ dogInfo, onClose }) {
 
