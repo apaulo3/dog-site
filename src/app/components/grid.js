@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react'
 import Modal from './modal';
 import { getGender } from '../utils';
+import prefix from '../prefix';
 
 export default function PuppyGrid() {
   const [showModal, setShowModal] = useState(false);
@@ -46,7 +47,7 @@ export default function PuppyGrid() {
             <p className={styles.pill}>Available</p>
           </div>
           <Image
-            src={`doodlePup.jpg`}
+            src={`${prefix}/doodlePup.jpg`}
             alt="Doodle Pup"
             layout="responsive"
             className={commonStyles.img}

@@ -1,3 +1,4 @@
+import prefix from '../prefix';
 import styles from '../styles/page.module.scss'
 import Image from 'next/image'
 
@@ -21,7 +22,7 @@ export default function OverlayBanner() {
       ></div>
       <div className='row'>
         <Image
-          src={`golden.png`}
+          src={`${prefix}/golden.png`}
           alt="Golden"
           layout="fit"
           width={430}

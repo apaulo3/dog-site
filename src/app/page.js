@@ -2,6 +2,7 @@ import styles from './styles/page.module.scss'
 import PuppyGrid from './components/grid'
 import Header from './components/header'
 import CaptionedImage from './components/captionedImage'
+import prefix from './prefix'
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <CaptionedImage
         text={"Our Dam"}
         subText={"Nala, F1 Golden Doodle"}
-        imgSrc={`doodlePup.jpg`}
+        imgSrc={`${prefix}/doodlePup.jpg`}
       />
 
       <div name="spacer" style={{ height: 70 }} />
@@ -26,7 +27,7 @@ export default function Home() {
       <CaptionedImage
         text={"Our Sire"}
         subText={"Bilbo, F1 Golden Doodle"}
-        imgSrc={`doodlePup.jpg`}
+        imgSrc={`${prefix}/doodlePup.jpg`}
         imageLeft={true}
       />
 

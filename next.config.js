@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
 
-module.exports = {
-  output: 'export'
+const env = process.env.NODE_ENV
+var nextConfig = {}
+
+if (env == "development") {
+  nextConfig = {}
+} else {
+  nextConfig = {
+    output: 'export',
+    basePath: '/dog-site',
+  }
 }
+
+module.exports = nextConfig

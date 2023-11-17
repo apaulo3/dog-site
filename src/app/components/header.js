@@ -1,6 +1,7 @@
 import styles from '../styles/header.module.scss';
 import Image from 'next/image';
 import { Allison, Wix_Madefor_Text } from 'next/font/google';
+import prefix from '../prefix';
 
 const allisonFont = Allison({
   subsets: ['latin'],
@@ -24,7 +25,7 @@ export default function Header() {
 
         <div className={styles.imgOverlay} />
         <Image
-          src={`landscape.jpeg`}
+          src={`${prefix}/landscape.jpeg`}
           alt="Header Photo"
           layout='responsive'
           className={styles.img}
