@@ -27,6 +27,7 @@
 
 .card {
   padding: 8px;
+  background-color: white;
   transition: transform 0.1s ease-in-out;
 }
 
@@ -41,7 +42,7 @@
     /* background-color: rgba(var(--brand-color), 1); */
     box-shadow: 0 0 15px rgba(33, 33, 33, .8);
     cursor: pointer;
-    transform: scale(1.03)
+    transform: scale(1.02)
   }
 }
 
