@@ -9,6 +9,10 @@ if (env == "development") {
   nextConfig = {
     output: 'export',
     basePath: '/dog-site',
+    images: {
+      loader: 'custom',
+      loaderFile: './imgLoader.js'
+    }
   }
 }
 
