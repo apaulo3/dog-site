@@ -2,17 +2,14 @@
 .modal {
   display: flex;
   position: fixed;
-  /* Stay in place */
+  padding: 2%;
+  box-sizing: border-box;
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  /* Black w/ opacity */
   align-items: center;
   justify-content: center;
 }
@@ -21,8 +18,9 @@
 .modalContent {
   background-color: #fefefe;
   padding: 1%;
-  width: 80%;
+  width: 100vh;
   border-radius: 15px;
+  height: auto;
 }
 
 /* The Close Button */
