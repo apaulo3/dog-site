@@ -3,47 +3,56 @@
     {
       "name": "Cooper",
       "gender": true,
-      "age": 5
+      "age": 5,
+      "status": "Available"
     },
     {
       "name": "Zephyr",
       "gender": true,
-      "age": 5
+      "age": 5,
+      "status": "Available"
     },
     {
       "name": "Pippin",
       "gender": false,
-      "age": 5
+      "age": 5,
+      "status": "Available"
     },
     {
       "name": "Poppy",
       "gender": true,
-      "age": 5
+      "age": 5,
+      "status": "Available"
     },
     {
       "name": "Blu",
       "gender": false,
-      "age": 5
+      "age": 5,
+      "status": "Available"
     },
     {
       "name": "Pheonix",
       "gender": true,
-      "age": 5
+      "age": 5,
+      "status": "Available"
     },
     {
       "name": "Coda",
       "gender": true,
-      "age": 5
+      "age": 5,
+      "status": "Available"
     },
     {
       "name": "Tanner",
       "gender": true,
-      "age": 5
+      "age": 5,
+      "status": "Available"
     },
     {
       "name": "Murphy",
       "gender": true,
-      "age": 5
+      "age": 5,
+      "status": "Available"
     }
   ]
 }
