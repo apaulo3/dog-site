@@ -1,0 +1,27 @@
+.pill {
+  width: 80px;
+  height: 20px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.greenPill {
+  background-color: var(--green-pill-fill);
+  border-color: var(--green-pill-border);
+  color: var(--green-pill-border);
+}
+
+.yellowPill {
+  background-color: var(--yellow-pill-fill);
+  border-color: var(--yellow-pill-border);
+  color: var(--yellow-pill-border);
+}
+
+.bluePill {
+  background-color: var(--blue-pill-fill);
+  border-color: var(--blue-pill-border);
+  color: var(--blue-pill-border);
+}

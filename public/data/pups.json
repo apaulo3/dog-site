@@ -10,13 +10,13 @@
       "name": "Zephyr",
       "gender": true,
       "age": 5,
-      "status": "Available"
+      "status": "Pending"
     },
     {
       "name": "Pippin",
       "gender": false,
       "age": 5,
-      "status": "Available"
+      "status": "Sold"
     },
     {
       "name": "Poppy",

@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react'
 import Modal from './modal';
 import { getGender } from '../utils';
 import prefix from '../prefix';
+import StatusPill from './statusPill';
 
 export default function PuppyGrid() {
   const [showModal, setShowModal] = useState(false);
@@ -44,7 +45,7 @@ export default function PuppyGrid() {
               <h1>{dog.name} ({getGender(dog.gender)})</h1>
               <p>{dog.age} weeks</p>
             </div>
-            <p className={styles.pill}>Available</p>
+            <StatusPill status={dog.status} />
           </div>
           <Image
             src={`${prefix}/doodlePup.jpg`}

@@ -1,7 +1,14 @@
 :root {
   --brand-color: rgb(9, 108, 206);
+
   --green-pill-border: rgb(71, 213, 24);
   --green-pill-fill: rgb(203, 250, 188);
+
+  --yellow-pill-border: rgb(213, 96, 24);
+  --yellow-pill-fill: rgb(250, 227, 188);
+
+  --blue-pill-border: rgb(135, 135, 135);
+  --blue-pill-fill: rgb(225, 225, 225);
 }
 
 * {
