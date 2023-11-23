@@ -3,6 +3,13 @@ import PuppyGrid from './components/grid'
 import Header from './components/header'
 import CaptionedImage from './components/captionedImage'
 import prefix from './prefix'
+import dynamic from 'next/dynamic'
+
+const CaptionedImageNoSSR = dynamic(
+  () => import('./components/captionedImage'),
+  { ssr: false }
+)
+
 
 export default function Home() {
   return (
@@ -16,7 +23,7 @@ export default function Home() {
         </p>
       </div>
 
-      <CaptionedImage
+      <CaptionedImageNoSSR
         text={"Our Dam"}
         subText={"Nala, F1 Golden Doodle"}
         imgSrc={`${prefix}/doodlePup.jpg`}
@@ -24,7 +31,7 @@ export default function Home() {
 
       <div name="spacer" style={{ height: 70 }} />
 
-      <CaptionedImage
+      <CaptionedImageNoSSR
         text={"Our Sire"}
         subText={"Bilbo, F1 Golden Doodle"}
         imgSrc={`${prefix}/doodlePup.jpg`}
