@@ -38,6 +38,7 @@ export default function CaptionedImage({
       alt="Captioned Image"
       layout="responsive"
       className={commonStyles.img}
+      placeholder='empty'
       width={100}
       height={66.8}
     />

@@ -52,6 +52,7 @@ export default function PuppyGrid() {
             alt="Doodle Pup"
             layout="responsive"
             className={commonStyles.img}
+            placeholder='empty'
             width={100}
             height={66.8}
           />

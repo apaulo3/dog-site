@@ -28,6 +28,7 @@ export default function OverlayBanner() {
           width={430}
           height={430}
           className={styles.img}
+          placeholder='empty'
           style={{
             zIndex: 0.5,
             position: 'absolute',

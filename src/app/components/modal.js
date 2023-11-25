@@ -21,6 +21,7 @@ export default function Modal({ dogInfo, onClose }) {
               alt="Doodle Pup"
               layout="responsive"
               className={commonStyles.img}
+              placeholder='empty'
               width={100}
               height={66.8}
             />

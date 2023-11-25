@@ -31,6 +31,7 @@ export default function Header() {
           className={styles.img}
           width={1200}
           height={673}
+          placeholder='empty'
         />
       </div>
     </div>
