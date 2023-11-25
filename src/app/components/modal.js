@@ -6,7 +6,7 @@ import prefix from '../prefix';
 
 export default function Modal({ dogInfo, onClose }) {
 
-  const { name, age, gender } = dogInfo
+  const { name, age, gender, images } = dogInfo
 
   return (
     <div className={styles.modal}>
@@ -17,7 +17,7 @@ export default function Modal({ dogInfo, onClose }) {
           <p>{age} weeks</p>
           <div className={styles.imgContainer}>
             <Image
-              src={`${prefix}/doodlePup.jpg`}
+              src={`${prefix}${images[0]}`}
               alt="Doodle Pup"
               layout="responsive"
               className={commonStyles.img}

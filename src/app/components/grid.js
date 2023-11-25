@@ -48,7 +48,7 @@ export default function PuppyGrid() {
             <StatusPill status={dog.status} />
           </div>
           <Image
-            src={`${prefix}/doodlePup.jpg`}
+            src={`${prefix}${dog.images[0]}`}
             alt="Doodle Pup"
             layout="responsive"
             className={commonStyles.img}
