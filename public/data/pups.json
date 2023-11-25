@@ -4,55 +4,82 @@
       "name": "Cooper",
       "gender": true,
       "age": 5,
-      "status": "Available"
+      "status": "Available",
+      "images": [
+        "/doodlePup.jpg"
+      ]
     },
     {
       "name": "Zephyr",
       "gender": true,
       "age": 5,
-      "status": "Pending"
+      "status": "Pending",
+      "images": [
+        "/doodlePup.jpg"
+      ]
     },
     {
       "name": "Pippin",
       "gender": false,
       "age": 5,
-      "status": "Sold"
+      "status": "Sold",
+      "images": [
+        "/doodlePup.jpg"
+      ]
     },
     {
       "name": "Poppy",
       "gender": true,
       "age": 5,
-      "status": "Available"
+      "status": "Available",
+      "images": [
+        "/doodlePup.jpg"
+      ]
     },
     {
       "name": "Blu",
       "gender": false,
       "age": 5,
-      "status": "Available"
+      "status": "Available",
+      "images": [
+        "/doodlePup.jpg"
+      ]
     },
     {
       "name": "Pheonix",
       "gender": true,
       "age": 5,
-      "status": "Available"
+      "status": "Available",
+      "images": [
+        "/doodlePup.jpg"
+      ]
     },
     {
       "name": "Coda",
       "gender": true,
       "age": 5,
-      "status": "Available"
+      "status": "Available",
+      "images": [
+        "/doodlePup.jpg"
+      ]
     },
     {
       "name": "Tanner",
       "gender": true,
       "age": 5,
-      "status": "Available"
+      "status": "Available",
+      "images": [
+        "/doodlePup.jpg"
+      ]
     },
     {
       "name": "Murphy",
       "gender": true,
       "age": 5,
-      "status": "Available"
+      "status": "Available",
+      "images": [
+        "/doodlePup.jpg"
+      ]
     }
   ]
 }
