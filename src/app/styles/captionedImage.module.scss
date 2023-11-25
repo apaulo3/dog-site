@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 50vw;
+  width: 35%;
 }
 
 .primaryText {
@@ -18,6 +18,10 @@
 
 .secondaryText {
   font-size: 1em;
+}
+
+.imgContainer {
+  width: 65%;
 }
 
 @media screen and (max-width: 750px) {

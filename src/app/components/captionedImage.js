@@ -32,14 +32,16 @@ export default function CaptionedImage({
     <p className={styles.secondaryText}>{subText}</p>
   </div>
 
-  const image = <Image
-    src={imgSrc}
-    alt="Captioned Image"
-    layout="responsive"
-    className={commonStyles.img}
-    width={100}
-    height={66.8}
-  />
+  const image = <div className={styles.imgContainer}>
+    <Image
+      src={imgSrc}
+      alt="Captioned Image"
+      layout="responsive"
+      className={commonStyles.img}
+      width={100}
+      height={66.8}
+    />
+  </div>
 
   if (useMobile) {
     return (
