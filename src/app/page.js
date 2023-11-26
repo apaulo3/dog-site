@@ -25,7 +25,7 @@ export default function Home() {
 
       <CaptionedImageNoSSR
         text={"Our Dam"}
-        subText={"Nala, F1 Golden Doodle"}
+        subText={"Nala, F1b Golden Doodle"}
         imgSrc={`${prefix}/doodlePup.jpg`}
       />
 
@@ -33,7 +33,7 @@ export default function Home() {
 
       <CaptionedImageNoSSR
         text={"Our Sire"}
-        subText={"Bilbo, F1 Golden Doodle"}
+        subText={"Bilbo, AKC Purebred Poodle"}
         imgSrc={`${prefix}/doodlePup.jpg`}
         imageLeft={true}
       />
@@ -41,7 +41,7 @@ export default function Home() {
       <div name="spacer" style={{ height: 70 }} />
 
       <h1 className={styles.sectionTitle} id="puppies">Our Puppies</h1>
-      <p className={styles.sectionSubtitle}>F2 Golden Doodles</p>
+      <p className={styles.sectionSubtitle}>F1b Golden Doodles</p>
 
       <PuppyGrid />
     </main>
