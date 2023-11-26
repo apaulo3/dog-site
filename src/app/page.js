@@ -40,7 +40,7 @@ export default function Home() {
 
       <div name="spacer" style={{ height: 70 }} />
 
-      <h1 className={styles.sectionTitle}>Our Puppies</h1>
+      <h1 className={styles.sectionTitle} id="puppies">Our Puppies</h1>
       <p className={styles.sectionSubtitle}>F2 Golden Doodles</p>
 
       <PuppyGrid />

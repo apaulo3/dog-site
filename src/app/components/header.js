@@ -1,7 +1,11 @@
+
+'use client';
+
 import styles from '../styles/header.module.scss';
 import Image from 'next/image';
 import { Allison, Wix_Madefor_Text } from 'next/font/google';
 import prefix from '../prefix';
+import Link from 'next/link';
 
 const allisonFont = Allison({
   subsets: ['latin'],
@@ -21,7 +25,9 @@ export default function Header() {
           <p className={`${styles.subTitle} ${wixFont.className}`}>Precious Pups</p>
         </div>
 
-        <button className={styles.actionBtn}>view pups</button>
+        <Link href="#puppies" className={styles.actionBtnLink} >
+          <button className={styles.actionBtn}>view pups</button>
+        </Link>
 
         <div className={styles.imgOverlay} />
         <Image
