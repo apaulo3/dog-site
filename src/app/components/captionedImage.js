@@ -17,7 +17,7 @@ export default function CaptionedImage({
     function handleResize() {
       if (useMobile && window.innerWidth > 750) {
         setUseMobile(false)
-      } else if (useMobile && window.innerWidth <= 750) {
+      } else if (!useMobile && window.innerWidth <= 750) {
         setUseMobile(true)
       }
     }
