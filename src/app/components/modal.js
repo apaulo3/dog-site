@@ -3,6 +3,7 @@ import commonStyles from '../styles/common.module.scss'
 import Image from 'next/image';
 import { getGender } from '../utils';
 import prefix from '../prefix';
+import ImgCarousel from './imgCarousel';
 
 export default function Modal({ dogInfo, onClose }) {
 
@@ -16,7 +17,8 @@ export default function Modal({ dogInfo, onClose }) {
           <h1>{name} ({getGender(gender)})</h1>
           <p>{age} weeks</p>
           <div className={styles.imgContainer}>
-            <Image
+            <ImgCarousel />
+            {/* <Image
               src={`${prefix}${images[0]}`}
               alt="Doodle Pup"
               layout="responsive"
@@ -24,7 +26,7 @@ export default function Modal({ dogInfo, onClose }) {
               placeholder='empty'
               width={100}
               height={66.8}
-            />
+            /> */}
           </div>
         </div>
       </div>
