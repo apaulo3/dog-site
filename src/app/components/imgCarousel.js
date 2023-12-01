@@ -1,10 +1,10 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import commonStyles from '../styles/common.module.scss';
 import { Carousel } from "react-responsive-carousel";
 import prefix from "../prefix";
 import Image from "next/image";
 
-export default function ImgCarousel() {
-  const imgs = ["/doodlePup.jpg", "/doodlePup.jpg", "/doodlePup.jpg"]
+export default function ImgCarousel({ images }) {
   return (
     <div>
       <Carousel
@@ -14,12 +14,13 @@ export default function ImgCarousel() {
         dynamicHeight={false}
         statusFormatter={(current, total) => ``}
       >
-        {imgs.map((img, index) => (
+        {images.map((img, index) => (
           <div key={index}>
             <Image
               src={`${prefix}${img}`}
               alt="image"
               layout="responsive"
+              className={commonStyles.img}
               placeholder='empty'
               width={100}
               height={66.8}

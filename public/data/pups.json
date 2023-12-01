@@ -6,6 +6,8 @@
       "age": 5,
       "status": "Available",
       "images": [
+        "/doodlePup.jpg",
+        "/doodlePup.jpg",
         "/doodlePup.jpg"
       ]
     },
@@ -15,6 +17,8 @@
       "age": 5,
       "status": "Pending",
       "images": [
+        "/doodlePup.jpg",
+        "/doodlePup.jpg",
         "/doodlePup.jpg"
       ]
     },
@@ -24,6 +28,8 @@
       "age": 5,
       "status": "Sold",
       "images": [
+        "/doodlePup.jpg",
+        "/doodlePup.jpg",
         "/doodlePup.jpg"
       ]
     },
@@ -33,6 +39,8 @@
       "age": 5,
       "status": "Available",
       "images": [
+        "/doodlePup.jpg",
+        "/doodlePup.jpg",
         "/doodlePup.jpg"
       ]
     },
@@ -42,6 +50,8 @@
       "age": 5,
       "status": "Available",
       "images": [
+        "/doodlePup.jpg",
+        "/doodlePup.jpg",
         "/doodlePup.jpg"
       ]
     },
@@ -51,6 +61,8 @@
       "age": 5,
       "status": "Available",
       "images": [
+        "/doodlePup.jpg",
+        "/doodlePup.jpg",
         "/doodlePup.jpg"
       ]
     },
@@ -60,6 +72,8 @@
       "age": 5,
       "status": "Available",
       "images": [
+        "/doodlePup.jpg",
+        "/doodlePup.jpg",
         "/doodlePup.jpg"
       ]
     },
@@ -69,6 +83,8 @@
       "age": 5,
       "status": "Available",
       "images": [
+        "/doodlePup.jpg",
+        "/doodlePup.jpg",
         "/doodlePup.jpg"
       ]
     },
@@ -78,6 +94,8 @@
       "age": 5,
       "status": "Available",
       "images": [
+        "/doodlePup.jpg",
+        "/doodlePup.jpg",
         "/doodlePup.jpg"
       ]
     }
