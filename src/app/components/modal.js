@@ -4,7 +4,7 @@ import ImgCarousel from './imgCarousel';
 
 export default function Modal({ dogInfo, onClose }) {
 
-  const { name, age, gender, images } = dogInfo
+  const { name, dob, gender, images, age } = dogInfo
 
   return (
     <div className={styles.modal}>

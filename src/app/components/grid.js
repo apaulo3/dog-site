@@ -5,7 +5,7 @@ import commonStyles from '../styles/common.module.scss'
 import Image from 'next/image';
 import { useState, useEffect } from 'react'
 import Modal from './modal';
-import { getGender } from '../utils';
+import { getAgeInWeeks, getGender } from '../utils';
 import prefix from '../prefix';
 import StatusPill from './statusPill';
 
@@ -28,6 +28,11 @@ export default function PuppyGrid() {
     fetch(`data/pups.json`)
       .then((res) => res.json())
       .then((data) => {
+        // Add the age attribute
+        data.pups.map((dog) => {
+          dog.age = getAgeInWeeks(dog.dob)
+        })
+
         setData(data)
         setLoading(false)
       })
