@@ -4,6 +4,7 @@ import Header from './components/header'
 import CaptionedImage from './components/captionedImage'
 import prefix from './prefix'
 import dynamic from 'next/dynamic'
+import Navigation from './components/navigation'
 
 const CaptionedImageNoSSR = dynamic(
   () => import('./components/captionedImage'),
@@ -14,6 +15,7 @@ const CaptionedImageNoSSR = dynamic(
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Navigation />
       <Header />
 
       <div className={styles.aboutSection}>

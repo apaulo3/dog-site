@@ -1,0 +1,29 @@
+.navMain {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  font-size: 1.2em;
+  padding-top: 6%;
+  z-index: 1;
+  color: var(--brand-text-color);
+}
+
+.logoTitleSection {
+  width: 40%;
+  padding-left: 10%;
+  font-weight: bold;
+  font-size: 1.28em;
+}
+
+.navItemList {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+
+.navItem {
+  position: relative;
+  padding-right: 20px;
+  color: var(--brand-text-color);
+}
