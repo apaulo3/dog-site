@@ -3,20 +3,11 @@
 
 import styles from '../styles/header.module.scss';
 import commonStyles from '../styles/common.module.scss'
-import { Allison, Wix_Madefor_Text } from 'next/font/google';
 import prefix from '../prefix';
 import Link from 'next/link';
 import { Carousel } from "react-responsive-carousel";
 import Image from 'next/image';
-
-const allisonFont = Allison({
-  subsets: ['latin'],
-  weight: '400'
-})
-
-const wixFont = Wix_Madefor_Text({
-  subsets: ['latin'],
-})
+import { useState } from 'react';
 
 let phrases = [
   "Puppy",
@@ -37,6 +28,51 @@ let phrases = [
 ]
 
 export default function Header() {
+  const [showWord, setShowWord] = useState(true)
+  function showCarousel() {
+    setShowWord(true)
+  }
+
+  function hideCarousel() {
+    setShowWord(false)
+  }
+
+  let carousel = <Carousel
+    className={styles.carousel}
+    showArrows={false}
+    showIndicators={false}
+    infiniteLoop={true}
+    showThumbs={false}
+    dynamicHeight={false}
+    stopOnHover={false}
+    autoPlay={true}
+    transitionTime={500}
+    swipeable={false}
+    onChange={(index) => {
+      if (index == phrases.length - 1) {
+        setTimeout(hideCarousel, 500)
+      }
+    }}
+    axis="vertical"
+    statusFormatter={(current, total) => ``}
+  >
+    {phrases.map((phrase, index) => (
+      <p key={index} className={styles.heroWord}>{phrase}</p>
+    ))}
+  </Carousel>
+
+  let heroWord = carousel
+
+  if (!showWord) {
+    heroWord = <p className={styles.heroWord}>
+      {phrases[phrases.length - 1]}
+    </p>
+
+    setTimeout(showCarousel, 3000)
+  } else {
+    heroWord = carousel
+  }
+
   return (
     <div className={styles.header}>
       <div className={styles.heroInfoBlock}>
@@ -51,22 +87,7 @@ export default function Header() {
             <p>
               {"Let us help you find your next"}
             </p>
-            <Carousel
-              className={styles.carousel}
-              showArrows={false}
-              showIndicators={false}
-              infiniteLoop={true}
-              showThumbs={false}
-              dynamicHeight={false}
-              stopOnHover={false}
-              autoPlay={true}
-              axis="vertical"
-              statusFormatter={(current, total) => ``}
-            >
-              {phrases.map((phrase, index) => (
-                <p key={index} className={styles.heroWord}>{phrase}</p>
-              ))}
-            </Carousel>
+            {heroWord}
           </div>
         </div>
 
