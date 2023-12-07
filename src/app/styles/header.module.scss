@@ -39,6 +39,9 @@
 
 .carousel li {
   height: 20px;
+  max-lines: 1;
+  overflow: hidden;
+  width: max-content;
 }
 
 .heroWord {
