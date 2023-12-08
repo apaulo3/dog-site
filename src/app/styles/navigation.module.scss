@@ -9,6 +9,13 @@
   color: var(--brand-text-color);
 }
 
+// @media screen and (max-width: 549px) {
+//   .navMain {
+//     padding-top: 0;
+//     height: 100%;
+//   }
+// }
+
 .logoTitleSection {
   width: 40%;
   padding-left: 10%;
@@ -26,4 +33,74 @@
   position: relative;
   padding-right: 20px;
   color: var(--brand-text-color);
+}
+
+// Mobile form factor CSS
+.stickyNav {
+  background-color: var(--brand-color);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.28em;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 17px;
+  color: var(--brand-text-color);
+}
+
+.hamburgerButton {
+  position: absolute;
+  z-index: 1;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--brand-text-color);
+  border: none;
+  right: 15px;
+}
+
+.sidebar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  background-color: var(--brand-color);
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 40px;
+  background-color: transparent;
+  color: var(--brand-text-color);
+  border: none;
+  z-index: 2;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .navItemList {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navItem {
+    text-align: center;
+    padding: 0;
+    padding-bottom: 10px;
+    font-size: 2em;
+  }
 }
